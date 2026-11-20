@@ -31,7 +31,7 @@ The Sync package itself (the part that talks to the agents and to Tinkjam) is bu
 
 ## Release signatures
 
-Every update manifest (`sync.json`, `mac.json`, `windows.json`, `linux.json`) carries an Ed25519
+Every update manifest (`sync.json`, `mac.json`, `windows.json`, `linux.json`) carries an ECDSA P-256
 signature over its fields. The apps hold the public keys and refuse an unsigned or wrongly signed
 manifest, so a server alone cannot push an update. The code is in `ReleaseSignature.swift`,
 `ReleaseSignature.cs` and `signature.rs`. Maintainers sign with `scripts/sign-release.ts` in the
