@@ -41,7 +41,7 @@ Tinkjam repository; the build notes here assume it is checked out beside this on
 
 - Mac: [`mac/README.md`](mac/README.md)
 - Linux: [`linux/README.md`](linux/README.md)
-- Windows: run `windows/build.ps1` in PowerShell. It needs the .NET SDK;
+- Windows: run `windows/build.ps1` in PowerShell. It needs the .NET SDK.
   `-CompileOnly` skips the installer.
 
 A build you make yourself is not signed by the Tinkjam release key. It runs, and it still accepts
